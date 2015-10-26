@@ -41,8 +41,10 @@
 .playerLeft { background: rgb(234, 234, 234); }
 
 /* Enemies/Obstacles */
-.spike { background-image: url('../sprites/fallingSpike.png'); }
-.missle { background-image: url('../sprites/rightMissle.png'); }
+/*.spike { background-image: url('../sprites/fallingSpike.png'); }*/
+.spike { background: url('https://cloud.githubusercontent.com/assets/15316291/10720773/39f19160-7b71-11e5-87c6-39dbc6a23ee6.png'); }
+/*.missle { background-image: url('../sprites/rightMissle.png'); }*/
+.missle {  background: url('https://cloud.githubusercontent.com/assets/15316291/10720813/b3529bb2-7b71-11e5-9436-69c1d907c0ea.png'); }
 .shooter { background: rgb(0, 0, 0);}
 
 .game {
