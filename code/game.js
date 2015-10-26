@@ -571,7 +571,6 @@ function runGame(plans, Display) {
 	  }
       else
         console.log("You win!");
-	    alert("You win!");
     });
   }
   startLevel(0);
