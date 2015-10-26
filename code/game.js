@@ -440,7 +440,7 @@ Level.prototype.playerTouched = function(type, actor) {
 		  
 	this.status = "lost";
 	gravity = 40;
-    jumpSpeed = 17;
+    jumpSpeed = 20;
 	playerXSpeed = 9;
 	
     this.finishDelay = 1;
@@ -466,6 +466,9 @@ Level.prototype.playerTouched = function(type, actor) {
          })) {
       this.status = "won";
       this.finishDelay = 1;
+      gravity = 40;
+    jumpSpeed = 20;
+	playerXSpeed = 9;
     }
   }
   // Power Ups
@@ -485,7 +488,7 @@ Level.prototype.playerTouched = function(type, actor) {
       return other != actor;
     });
 	this.status = "flashGPU";
-	gravity = 45;
+	gravity = 40;
     jumpSpeed = 20;
 	playerXSpeed = 14;
   }
