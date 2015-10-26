@@ -1,1 +1,65 @@
+.background    { background: rgb(61, 70, 74);
+                 table-layout: fixed;
+                 border-spacing: 0;   }				 
+.background td { padding: 0;          }
 
+.lava          { background: rgb(204, 235, 245); }
+.wall          { background: rgb(102, 153, 255);   }
+.platform      { background: white;   }
+
+.actor  { position: absolute;  }
+
+/*Collectibles*/
+.coin   { background: rgb(241, 229, 89); }
+.zeroG {
+	width: 100px;
+	height: 100px;
+	background: rgb(0, 241, 0);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+		   box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+.flashG {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+		   box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+/* Power Ups */
+.zeroGPU .player {background: rgb(0, 241, 0);}
+.zeroGPU .playerLeft {background: rgb(0, 241, 0);}
+
+.flashGPU .player {background: red;}
+.flashGPU .playerLeft {background: red;}
+
+/* Player */
+.player { background: rgb(234, 234, 234); }
+.playerLeft { background: rgb(234, 234, 234); }
+
+/* Enemies/Obstacles */
+.spike { background-image: url('../sprites/fallingSpike.png'); }
+.missle { background-image: url('../sprites/rightMissle.png'); }
+.shooter { background: rgb(0, 0, 0);}
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+.lost .playerLeft {
+  background: rgb(160, 64, 64);
+}
+.won .playerLeft {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
